@@ -1,0 +1,7 @@
+Duck
+Cow
+Goat
+Parrot
+Horse
+Horse
+Horse
