@@ -1,18 +1,14 @@
-//ex01.cpp
-//Writing to files
 #include <iostream>
 #include <fstream>
-
-
 using namespace std;
 
 int main()
 {
     ifstream ifs;
 
-    // Open a file for writing
+    // Open a file for reading
     ifs.open("parrot_sketch.txt");
-    //open will fail if file does not exist
+    // open will fail if file does not exist
     // but your program will not crash
     if (!ifs) {
         cerr << "Open failed" << endl;
@@ -45,7 +41,7 @@ int main()
         }
         // given a file or an input stream like cin,
         // ___.get() gets a single character from that input
-        response = cin.get(); // *mostly* equivalent to cin >> response; <-- I'm pretty sure this skips whitespace, which isn't what we want here
+        response = cin.get(); // *mostly* equivalent to cin >> response; <-- This skips whitespace, which isn't what we want here
     }
 
     cout << "Number of lines that included 'parrot': "
